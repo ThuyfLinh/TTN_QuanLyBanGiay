@@ -70,3 +70,6 @@ C:\Users\Huong\Desktop\TTN_QuanLyBanGiay\branches\DoHuong\TTN\TTN\obj\Debug\TTN.
 C:\Users\Huong\Desktop\TTN_QuanLyBanGiay\branches\DoHuong\TTN\TTN\obj\Debug\TTN.csproj.CopyComplete
 C:\Users\Huong\Desktop\TTN_QuanLyBanGiay\branches\DoHuong\TTN\TTN\obj\Debug\TTN.exe
 C:\Users\Huong\Desktop\TTN_QuanLyBanGiay\branches\DoHuong\TTN\TTN\obj\Debug\TTN.pdb
+C:\Users\HongHong\Desktop\TTN_QuanLyBanGiay\TTN_QuanLyBanGiay\TTN\TTN\bin\Debug\TTN.exe.config
+C:\Users\HongHong\Desktop\TTN_QuanLyBanGiay\TTN_QuanLyBanGiay\TTN\TTN\obj\Debug\TTN.exe
+C:\Users\HongHong\Desktop\TTN_QuanLyBanGiay\TTN_QuanLyBanGiay\TTN\TTN\obj\Debug\TTN.pdb

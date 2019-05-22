@@ -1,4 +1,4 @@
-﻿namespace TTN.GUI
+﻿namespace TNN.GUI
 {
     partial class fThongKe
     {
@@ -290,6 +290,7 @@
             this.btnThoat.UseCustomBackColor = true;
             this.btnThoat.UseSelectable = true;
             this.btnThoat.UseStyleColors = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // txtHoTen
             // 

@@ -86,6 +86,7 @@
             this.btnBack.UseCustomBackColor = true;
             this.btnBack.UseSelectable = true;
             this.btnBack.UseStyleColors = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnPrint
             // 
@@ -99,6 +100,7 @@
             this.btnPrint.UseCustomBackColor = true;
             this.btnPrint.UseSelectable = true;
             this.btnPrint.UseStyleColors = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click_1);
             // 
             // metroLabel1
             // 
