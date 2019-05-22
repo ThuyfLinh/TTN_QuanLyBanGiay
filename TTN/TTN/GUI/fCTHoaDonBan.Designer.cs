@@ -104,7 +104,7 @@
             // 
             // txtMaGiay
             // 
-            this.txtMaGiay.Location = new System.Drawing.Point(135, 69);
+            this.txtMaGiay.Location = new System.Drawing.Point(200, 74);
             this.txtMaGiay.Multiline = true;
             this.txtMaGiay.Name = "txtMaGiay";
             this.txtMaGiay.Size = new System.Drawing.Size(256, 40);
@@ -115,11 +115,11 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(62, 86);
+            this.metroLabel2.Location = new System.Drawing.Point(127, 85);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(58, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(61, 19);
             this.metroLabel2.TabIndex = 47;
-            this.metroLabel2.Text = "Mã giày";
+            this.metroLabel2.Text = "Mã giày:";
             this.metroLabel2.UseCustomBackColor = true;
             this.metroLabel2.UseCustomForeColor = true;
             // 
@@ -153,7 +153,7 @@
             this.dgvCTHD.EnableHeadersVisualStyles = false;
             this.dgvCTHD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgvCTHD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvCTHD.Location = new System.Drawing.Point(51, 149);
+            this.dgvCTHD.Location = new System.Drawing.Point(36, 149);
             this.dgvCTHD.MultiSelect = false;
             this.dgvCTHD.Name = "dgvCTHD";
             this.dgvCTHD.ReadOnly = true;
@@ -169,14 +169,14 @@
             this.dgvCTHD.RowHeadersVisible = false;
             this.dgvCTHD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCTHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCTHD.Size = new System.Drawing.Size(934, 320);
+            this.dgvCTHD.Size = new System.Drawing.Size(994, 320);
             this.dgvCTHD.TabIndex = 46;
             // 
             // metroLabel14
             // 
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel14.Location = new System.Drawing.Point(510, 36);
+            this.metroLabel14.Location = new System.Drawing.Point(575, 41);
             this.metroLabel14.Name = "metroLabel14";
             this.metroLabel14.Size = new System.Drawing.Size(0, 0);
             this.metroLabel14.TabIndex = 44;
@@ -185,7 +185,7 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(582, 69);
+            this.txtSoLuong.Location = new System.Drawing.Point(647, 74);
             this.txtSoLuong.Multiline = true;
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(260, 40);
@@ -196,7 +196,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(502, 90);
+            this.metroLabel7.Location = new System.Drawing.Point(567, 88);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(66, 19);
             this.metroLabel7.TabIndex = 40;
@@ -206,7 +206,7 @@
             // 
             // txtMaHD
             // 
-            this.txtMaHD.Location = new System.Drawing.Point(135, 15);
+            this.txtMaHD.Location = new System.Drawing.Point(200, 20);
             this.txtMaHD.Multiline = true;
             this.txtMaHD.Name = "txtMaHD";
             this.txtMaHD.Size = new System.Drawing.Size(256, 40);
@@ -217,7 +217,7 @@
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(38, 25);
+            this.metroLabel11.Location = new System.Drawing.Point(103, 30);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(87, 19);
             this.metroLabel11.TabIndex = 32;
@@ -253,7 +253,7 @@
             this.btnThemCTKM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnThemCTKM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemCTKM.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnThemCTKM.Location = new System.Drawing.Point(748, 55);
+            this.btnThemCTKM.Location = new System.Drawing.Point(853, 45);
             this.btnThemCTKM.Name = "btnThemCTKM";
             this.btnThemCTKM.Size = new System.Drawing.Size(106, 40);
             this.btnThemCTKM.TabIndex = 18;
@@ -267,7 +267,7 @@
             this.btnXoaCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnXoaCT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaCT.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnXoaCT.Location = new System.Drawing.Point(615, 55);
+            this.btnXoaCT.Location = new System.Drawing.Point(681, 45);
             this.btnXoaCT.Name = "btnXoaCT";
             this.btnXoaCT.Size = new System.Drawing.Size(106, 40);
             this.btnXoaCT.TabIndex = 17;
@@ -281,7 +281,7 @@
             this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTimKiem.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnTimKiem.Location = new System.Drawing.Point(338, 55);
+            this.btnTimKiem.Location = new System.Drawing.Point(381, 45);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(106, 40);
             this.btnTimKiem.TabIndex = 13;
@@ -314,7 +314,7 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(38, 55);
+            this.txtTimKiem.Location = new System.Drawing.Point(81, 45);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(264, 30);
