@@ -17,12 +17,25 @@ namespace TTN.GUI
             InitializeComponent();
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
+       
+
+        private void btnPrint_Click_1(object sender, EventArgs e)
         {
-            fThongKe form = new fThongKe();
+            string name = txtName.Text;
+            if (name == "")
+            {
+                MessageBox.Show("Vui lòng nhập thông tin");
+                return;
+            }
+            fThongKe frame = new fThongKe(name);
             this.Hide();
-            form.ShowDialog();
+            frame.ShowDialog();
             this.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
