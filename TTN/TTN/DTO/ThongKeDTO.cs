@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TTN.DTO
 {
-    class ThongKe_DTO
+    class ThongKeDTO
     {
         private int idGiay;
         private string tenGiay;
@@ -80,7 +80,7 @@ namespace TTN.DTO
             }
         }
 
-        public ThongKe_DTO(DataRow row)
+        public ThongKeDTO(DataRow row)
         {
             Int32.TryParse(row["idGiay"].ToString(), out idGiay);
             Int32.TryParse(row["soLuong"].ToString(), out soLuong);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TTN.DTO
 {
-    class ThongKeDTO
+    class ThongKe_DTO
     {
         private int idHoaDon;
         private string tenNV;
@@ -19,14 +19,14 @@ namespace TTN.DTO
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public decimal TongTien { get => tongTien; set => tongTien = value; }
 
-        public ThongKeDTO(int idHoaDon, string tenNV, int soLuong, decimal tongTien)
+        public ThongKe_DTO(int idHoaDon, string tenNV, int soLuong, decimal tongTien)
         {
             this.idHoaDon = idHoaDon;
             this.tenNV = tenNV;
             this.soLuong = soLuong;
             this.tongTien = tongTien;
         }
-        public ThongKeDTO(DataRow row)
+        public ThongKe_DTO(DataRow row)
         {
             Int32.TryParse(row["IDHoaDon"].ToString(), out idHoaDon);
             this.tenNV = row["TenNV"].ToString();
