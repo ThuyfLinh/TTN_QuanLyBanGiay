@@ -68,7 +68,10 @@ namespace TTN
 
         private void mtDoanhThu_Click(object sender, EventArgs e)
         {
-           
+            fDoanhThu form = new fDoanhThu();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
         }
 
         private void mtDoanhSo_Click(object sender, EventArgs e)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTN.GUI;
 
 namespace TTN.GUI
 {
@@ -27,9 +28,9 @@ namespace TTN.GUI
                 MessageBox.Show("Vui lòng nhập thông tin");
                 return;
             }
-            fThongKe frame = new fThongKe(name);
+            //fThongKe frame = new fThongKe(name);
             this.Hide();
-            frame.ShowDialog();
+            //frame.ShowDialog();
             this.Show();
         }
 
