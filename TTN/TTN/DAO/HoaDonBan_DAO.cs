@@ -20,7 +20,7 @@ namespace TTN.DAO
         public List<HoaDonBan_DTO> GetHoaDonBan()
         {
             List<HoaDonBan_DTO> ListHoaDonBan = new List<HoaDonBan_DTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("PROC_GetListHoaDonBan");
+            DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetListHoaDonBan");
             foreach (DataRow item in data.Rows)
             {
                 HoaDonBan_DTO hoadonban = new HoaDonBan_DTO(item);
@@ -31,7 +31,7 @@ namespace TTN.DAO
         public List<HoaDonBan_DTO> SearchHD(string str)
         {
             List<HoaDonBan_DTO> HDList = new List<HoaDonBan_DTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC proc_searchHoaDonBan  @str ", new object[] { str });
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC USP_searchHoaDonBan  @str ", new object[] { str });
             foreach (DataRow item in data.Rows)
             {
                 HoaDonBan_DTO hdb = new HoaDonBan_DTO(item);
@@ -41,19 +41,19 @@ namespace TTN.DAO
         }
         public bool Insert_HoaDonBan_KHold(string tenNV, string tenKH, string tenCT, DateTime ngay,string sdt)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC PROC_INSERT_HoaDonBan_KHold  @TenNV , @TenKH , @SDT , @TenCT , @Ngay ", new object[] {tenNV,tenKH,sdt,tenCT,ngay });
+            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC USP_INSERT_HoaDonBan_KHold  @TenNV , @TenKH , @SDT , @TenCT , @Ngay ", new object[] {tenNV,tenKH,sdt,tenCT,ngay });
 
             return result > 0;
         }
         public bool Insert_HoaDonBan_KHnew(string tenNV, string tenKH, string tenCT, DateTime ngay, string sdt)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC PROC_INSERT_HoaDonBan_KHnew  @TenNV , @TenKH , @SDT , @TenCT , @Ngay ", new object[] { tenNV, tenKH, sdt, tenCT, ngay });
+            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC USP_INSERT_HoaDonBan_KHnew  @TenNV , @TenKH , @SDT , @TenCT , @Ngay ", new object[] { tenNV, tenKH, sdt, tenCT, ngay });
 
             return result > 0;
         }
         public bool Update_HoaDonBan(int maHD,string tenNV, string tenKH, string tenCT, DateTime ngay, string sdt)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("exec PROC_UPDATE_HoaDonBan  @MaHD , @TenNV , @TenKH , @SoDT , @TenCT , @Ngay ", new object[] { maHD,tenNV, tenKH, sdt, tenCT, ngay });
+            int result = DataProvider.Instance.ExecuteNonQuery("exec USP_UPDATE_HoaDonBan  @MaHD , @TenNV , @TenKH , @SoDT , @TenCT , @Ngay ", new object[] { maHD,tenNV, tenKH, sdt, tenCT, ngay });
 
             return result > 0;
         }

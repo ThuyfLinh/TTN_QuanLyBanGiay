@@ -71,7 +71,6 @@ namespace TTN.GUI
                 }
 
             }
-            else LoadList();
         }
 
         private void btnThemKM_Click(object sender, EventArgs e)
