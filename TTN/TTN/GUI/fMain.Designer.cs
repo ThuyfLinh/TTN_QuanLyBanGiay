@@ -45,7 +45,7 @@
             this.mtDoanhSo.Name = "mtDoanhSo";
             this.mtDoanhSo.Size = new System.Drawing.Size(142, 137);
             this.mtDoanhSo.TabIndex = 15;
-            this.mtDoanhSo.Text = "DOANH SỐ";
+            this.mtDoanhSo.Text = "THỐNG KÊ";
             this.mtDoanhSo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.mtDoanhSo.TileImage = global::TTN.Properties.Resources.doánho;
             this.mtDoanhSo.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;

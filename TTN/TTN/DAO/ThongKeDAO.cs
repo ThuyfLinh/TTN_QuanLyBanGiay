@@ -16,13 +16,13 @@ namespace TTN.DAO
             get { if (instance == null) instance = new ThongKeDAO(); return instance; }
             private set { instance = value; }
         }
-        public List<ThongKe_DTO> GetListThongKe()
+        public List<ThongKeDTO> GetListThongKe()
         {
-            List<ThongKe_DTO> list = new List<ThongKe_DTO>();
+            List<ThongKeDTO> list = new List<ThongKeDTO>();
             DataTable data = DataProvider.Instance.ExecuteQuery("select IDGiay , TenGiay , SoLuong , DonGia , (SoLuong * DonGia) as N'TongTien' from GIAY");
             foreach (DataRow item in data.Rows)
             {
-                ThongKe_DTO tk = new ThongKe_DTO(item);
+                ThongKeDTO tk = new ThongKeDTO(item);
                 list.Add(tk);
             }
             return list;

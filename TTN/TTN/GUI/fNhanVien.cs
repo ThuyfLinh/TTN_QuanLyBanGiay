@@ -113,7 +113,7 @@ namespace TTN.GUI
                 {
                     string hoTen = txtHoTen.Text;
                     DateTime ngaySinh;
-                    DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+                    DateTime.TryParse(dtpNSNV.Text, out ngaySinh);
                     string diaChi = txtDiaChi.Text;
                     int maNv;
                     Int32.TryParse(lblMa.Text, out maNv);
