@@ -36,6 +36,9 @@ namespace TTN.GUI
             txtMaGiay.DataBindings.Add(new Binding("Text", dgvCTHD.DataSource, "MaGiay", true, DataSourceUpdateMode.Never));
             txtSoLuong.DataBindings.Clear();
             txtSoLuong.DataBindings.Add(new Binding("Text", dgvCTHD.DataSource, "SoLuong", true, DataSourceUpdateMode.Never));
+            decimal tongtien = CTHoaDonBan_DAO.Instance.getTongtien(int.Parse(txtMaHD.Text));
+            txtTongTien.Text = tongtien.ToString();
+            
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@ namespace TTN.DAO
             }
             return ListHoaDonBan;
         }
+
         public List<HoaDonBan_DTO> SearchHD(string str)
         {
             List<HoaDonBan_DTO> HDList = new List<HoaDonBan_DTO>();
@@ -57,5 +58,10 @@ namespace TTN.DAO
 
             return result > 0;
         }
+        //public decimal TinhTongTien(int maHD)
+        //{
+        //   // int result = DataProvider.Instance.ExecuteQuery("EXEC usp_tinhtongtien  @id", new object[] { maHD });
+        //   // return result;
+        //}
     }
 }

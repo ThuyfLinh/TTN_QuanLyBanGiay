@@ -140,5 +140,7 @@ namespace TTN.GUI
             f.ShowDialog();
             this.Show();
         }
+
+      
     }
 }

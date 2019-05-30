@@ -29,7 +29,7 @@ namespace TTN.DAO
         }
         public float GetTongTien()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select sum(SoLuong * DonGia) as tongtien from GIAY");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select sum(SoLuong * DonGia) as tongtien from GIAY ");
             DataRow item = data.Rows[0];
             float tongTien;
             float.TryParse(item["tongTien"].ToString(), out tongTien);

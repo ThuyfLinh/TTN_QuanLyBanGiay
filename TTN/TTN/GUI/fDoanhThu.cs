@@ -52,5 +52,14 @@ namespace TTN.GUI
         {
             Load();
         }
+
+        private void fDoanhThu_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_10_QuanLyBanGiay_T5DataSet.HOADONBAN' table. You can move, or remove it, as needed.
+            this.hOADONBANTableAdapter.Fill(this._10_QuanLyBanGiay_T5DataSet.HOADONBAN);
+            // TODO: This line of code loads data into the '_10_QuanLyBanGiay_T5DataSet.CTHOADONBAN' table. You can move, or remove it, as needed.
+            this.cTHOADONBANTableAdapter.Fill(this._10_QuanLyBanGiay_T5DataSet.CTHOADONBAN);
+
+        }
     }
 }

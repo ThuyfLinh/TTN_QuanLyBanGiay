@@ -85,6 +85,7 @@ namespace TTN.GUI
 
         private void btnThemKM_Click(object sender, EventArgs e)
         {
+            
             fCTKhuyenMai KM = new fCTKhuyenMai();
             this.Hide();
             KM.ShowDialog();

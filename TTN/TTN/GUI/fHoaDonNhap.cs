@@ -34,7 +34,7 @@ namespace TTN.GUI
             dgvHoaDonNhap.Columns["IDHoaDon"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             // LoadListHDN();
             LoadIntoComBoBoxIDNhanVien(cboIDNhanVien);
-            LoadIntoComBoBoxIDGiay(cboIDGiay);
+           // LoadIntoComBoBoxIDGiay(cboIDGiay);
 
             AddBinding();
         }
@@ -60,7 +60,7 @@ namespace TTN.GUI
             dtpNgayNhap.DataBindings.Clear();
             dtpNgayNhap.DataBindings.Add(new Binding("Text", dgvHoaDonNhap.DataSource, "ngayNhap", true, DataSourceUpdateMode.Never));
             cboIDNhanVien.DataBindings.Clear();
-            cboIDNhanVien.DataBindings.Add(new Binding("Text", dgvHoaDonNhap.DataSource, "idNhanVien", true, DataSourceUpdateMode.Never));
+            cboIDNhanVien.DataBindings.Add(new Binding("Text", dgvHoaDonNhap.DataSource, "", true, DataSourceUpdateMode.Never));
         }
         private void cboIDNhanVien_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -110,7 +110,7 @@ namespace TTN.GUI
                     decimal donGia;
 
                     Int32.TryParse(lblIDHoaDonNhap.Text, out idHoaDon);
-                    Int32.TryParse(cboIDGiay.Text, out idGiay);
+                    Int32.TryParse(TxtIDGiay.Text, out idGiay);
                     Int32.TryParse(txtSLNhan.Text, out SLNhan);
                     Int32.TryParse(txtSLYeuCau.Text, out SLYeuCau);
                     decimal.TryParse(txtDonGia.Text, out donGia);

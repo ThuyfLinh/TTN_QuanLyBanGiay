@@ -25,8 +25,17 @@ namespace TTN.DAO
             {
                 CTHoaDonBan_DTO cthoadonban = new CTHoaDonBan_DTO(item);
                 ListCTHoaDonBan.Add(cthoadonban);
+             
             }
             return ListCTHoaDonBan;
+        }
+        public decimal getTongtien(int id)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select sum(dongiaban * soluong) as tongtien from cthoadonban where idhoadon = "+id);
+            DataRow item = data.Rows[0];
+            decimal tongtien = 0;
+            decimal.TryParse(item["tongtien"].ToString(), out tongtien);
+            return tongtien;
         }
         public List<CTHoaDonBan_DTO> SearchCTHD(int id,string str)
         {

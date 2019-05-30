@@ -161,6 +161,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="_10_QuanLyBanGiay_T5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_10_QuanLyBanGiay_T5DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\fCTHoaDonBan.resx">
       <DependentUpon>fCTHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +222,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_10_QuanLyBanGiay_T5DataSet.xsc">
+      <DependentUpon>_10_QuanLyBanGiay_T5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_10_QuanLyBanGiay_T5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_10_QuanLyBanGiay_T5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_10_QuanLyBanGiay_T5DataSet.xss">
+      <DependentUpon>_10_QuanLyBanGiay_T5DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
